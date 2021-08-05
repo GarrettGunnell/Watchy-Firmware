@@ -1,11 +1,9 @@
-#include <Watchy.h>
+#include "AcerolaWatch.h"
 
-Watchy watch;
+AcerolaWatch watch;
 
 void setup() {
   watch.init();
 }
 
-void loop() {
-
-}
+void loop() {}
