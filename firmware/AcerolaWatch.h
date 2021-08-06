@@ -11,6 +11,9 @@ class AcerolaWatch : public Watchy {
   public:
     AcerolaWatch();
     void drawWatchFace();
+    void watchFace1();
+    void watchFace2();
 };
 
+typedef void (AcerolaWatch::*fptr)();
 #endif

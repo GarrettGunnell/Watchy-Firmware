@@ -3,6 +3,16 @@
 AcerolaWatch::AcerolaWatch(){}
 
 void AcerolaWatch::drawWatchFace() {
+  switch(currentTime.Day) {
+    case 1:
+      watchFace1();
+      break;
+  }
+
+  watchFace1();
+}
+
+void AcerolaWatch::watchFace1() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface1_bg, 200, 200, GxEPD_WHITE);
 
