@@ -3,6 +3,7 @@
 
 #include <Watchy.h>
 #include "aiko_icon_1.h"
+#include "watchface_1.h"
 
 class AcerolaWatch : public Watchy {
   public:
