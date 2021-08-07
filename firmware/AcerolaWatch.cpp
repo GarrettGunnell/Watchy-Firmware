@@ -115,28 +115,22 @@ void AcerolaWatch::watchFace5() {
 
 void AcerolaWatch::watchFace6() {
   display.fillScreen(GxEPD_BLACK);
+  display.drawBitmap(0, 0, watchface6_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_WHITE);
   display.setFont(&CC_YadaYadaYada9pt7b);
-  display.setCursor(5, 20);
+  display.setCursor(30, 38);
   display.print("PUNPUN WAS...");
-  display.setCursor(5, 40);
-  display.print("JUST FINE AGAIN");
-  display.setCursor(5, 60);
-  display.print("TODAY.");
+  display.setCursor(15, 166);
+  display.setFont(&CC_YadaYadaYada6pt7b);
+  display.print("JUST FINE AGAIN TODAY.");
 
+  display.setTextColor(GxEPD_BLACK);
   display.setFont(&CC_YadaYadaYada18pt7b);
-  display.setCursor(50, 150);
+  display.setCursor(35, 112);
   int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 0;
   display.print((hour < 10) ? "0" : "");
   display.print(hour);
   display.print(":");
   display.print((currentTime.Minute < 10) ? "0" : "");
   display.print(currentTime.Minute);
-  display.setFont(&CC_YadaYadaYada9pt7b);
-  display.setCursor(50, 175);
-  display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
-  display.print((currentTime.Day < 10) ? "0" : "");
-  display.println(currentTime.Day);
 }

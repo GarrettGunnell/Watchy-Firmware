@@ -8,8 +8,10 @@
 #include "watchface_3.h"
 #include "watchface_4.h"
 #include "watchface_5.h"
+#include "watchface_6.h"
 #include "fonts/CC_YadaYadaYada18pt7b.h"
 #include "fonts/CC_YadaYadaYada9pt7b.h"
+#include "fonts/CC_YadaYadaYada6pt7b.h"
 
 class AcerolaWatch : public Watchy {
   public:
