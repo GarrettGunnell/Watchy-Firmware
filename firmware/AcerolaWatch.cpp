@@ -12,12 +12,7 @@ void AcerolaWatch::drawWatchFace() {
       break;
   }
 
-  if (currentTime.Day % 2 == 0)
-    watchFace1();
-  else
-    watchFace2();
-
-  watchFace3();
+  watchFace4();
 }
 
 void AcerolaWatch::watchFace1() {
@@ -91,5 +86,22 @@ void AcerolaWatch::watchFace3() {
   display.print("/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
+}
 
+void AcerolaWatch::watchFace4() {
+  display.fillScreen(GxEPD_BLACK);
+  display.drawBitmap(0, 0, watchface4_bg, 200, 200, GxEPD_WHITE);
+
+  display.setTextColor(GxEPD_WHITE);
+  display.setFont(&CC_YadaYadaYada9pt7b);
+  display.setCursor(80, 80);
+
+  int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 0;
+  display.print((hour < 10) ? "0" : "");
+  display.print(hour);
+
+  display.setCursor(80, 100);
+  display.print((currentTime.Minute < 10) ? "0" : "");
+  display.print(currentTime.Minute);
+  
 }
