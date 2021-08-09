@@ -2,7 +2,6 @@
 #define ACEROLA_WATCH_H
 
 #include <Watchy.h>
-#include "aiko_icon_1.h"
 #include "watchface_1.h"
 #include "watchface_2.h"
 #include "watchface_3.h"
