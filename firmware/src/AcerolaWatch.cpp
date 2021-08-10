@@ -3,10 +3,10 @@
 AcerolaWatch::AcerolaWatch(){}
 
 void AcerolaWatch::drawWatchFace() {
-  watchFace15();
+  Face16();
 }
 
-void AcerolaWatch::watchFace1() {
+void AcerolaWatch::Face1() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface1_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
@@ -26,7 +26,7 @@ void AcerolaWatch::watchFace1() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace2() {
+void AcerolaWatch::Face2() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface2_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_WHITE);
@@ -47,7 +47,7 @@ void AcerolaWatch::watchFace2() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace3() {
+void AcerolaWatch::Face3() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface3_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
@@ -67,7 +67,7 @@ void AcerolaWatch::watchFace3() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace4() {
+void AcerolaWatch::Face4() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface4_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_WHITE);
@@ -81,7 +81,7 @@ void AcerolaWatch::watchFace4() {
   display.print(currentTime.Minute);
 }
 
-void AcerolaWatch::watchFace5() {
+void AcerolaWatch::Face5() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface5_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_WHITE);
@@ -101,7 +101,7 @@ void AcerolaWatch::watchFace5() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace6() {
+void AcerolaWatch::Face6() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface6_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_WHITE);
@@ -122,7 +122,7 @@ void AcerolaWatch::watchFace6() {
   display.print(currentTime.Minute);
 }
 
-void AcerolaWatch::watchFace7() {
+void AcerolaWatch::Face7() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface7_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_WHITE);
@@ -144,7 +144,7 @@ void AcerolaWatch::watchFace7() {
 }
 
 
-void AcerolaWatch::watchFace8() {
+void AcerolaWatch::Face8() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface8_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
@@ -165,7 +165,7 @@ void AcerolaWatch::watchFace8() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace9() {
+void AcerolaWatch::Face9() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface9_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
@@ -186,7 +186,7 @@ void AcerolaWatch::watchFace9() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace10() {
+void AcerolaWatch::Face10() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface10_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
@@ -207,7 +207,7 @@ void AcerolaWatch::watchFace10() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace11() {
+void AcerolaWatch::Face11() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface11_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
@@ -228,7 +228,7 @@ void AcerolaWatch::watchFace11() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace12() {
+void AcerolaWatch::Face12() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface12_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
@@ -249,7 +249,7 @@ void AcerolaWatch::watchFace12() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace13() {
+void AcerolaWatch::Face13() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface13_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
@@ -270,7 +270,7 @@ void AcerolaWatch::watchFace13() {
   display.println(currentTime.Day);
 }
 
-void AcerolaWatch::watchFace14() {
+void AcerolaWatch::Face14() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface14_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_WHITE);
@@ -283,9 +283,30 @@ void AcerolaWatch::watchFace14() {
   display.print(currentTime.Minute);
 }
 
-void AcerolaWatch::watchFace15() {
+void AcerolaWatch::Face15() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface15_bg, 200, 200, GxEPD_WHITE);
+  display.setTextColor(GxEPD_BLACK);
+  display.setFont(&Manti_Sans_Fixed_Demo20pt7b);
+  display.setCursor(70, 30);
+  int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 12;
+  display.print((hour < 10) ? "0" : "");
+  display.print(String(hour) + ":");
+  display.print((currentTime.Minute < 10) ? "0" : "");
+  display.print(currentTime.Minute);
+
+  display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
+  display.setCursor(110, 50);
+  display.print((currentTime.Month < 10) ? "0" : "");
+  display.print(currentTime.Month);
+  display.print("/");
+  display.print((currentTime.Day < 10) ? "0" : "");
+  display.println(currentTime.Day);
+}
+
+void AcerolaWatch::Face16() {
+  display.fillScreen(GxEPD_BLACK);
+  display.drawBitmap(0, 0, watchface16_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
   display.setFont(&Manti_Sans_Fixed_Demo20pt7b);
   display.setCursor(70, 30);

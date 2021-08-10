@@ -9,21 +9,22 @@ class AcerolaWatch : public Watchy {
   public:
     AcerolaWatch();
     void drawWatchFace();
-    void watchFace1();
-    void watchFace2();
-    void watchFace3();
-    void watchFace4();
-    void watchFace5();
-    void watchFace6();
-    void watchFace7();
-    void watchFace8();
-    void watchFace9();
-    void watchFace10();
-    void watchFace11();
-    void watchFace12();
-    void watchFace13();
-    void watchFace14();
-    void watchFace15();
+    void Face1();
+    void Face2();
+    void Face3();
+    void Face4();
+    void Face5();
+    void Face6();
+    void Face7();
+    void Face8();
+    void Face9();
+    void Face10();
+    void Face11();
+    void Face12();
+    void Face13();
+    void Face14();
+    void Face15();
+    void Face16();
 };
 
 #endif
