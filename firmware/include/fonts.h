@@ -9,5 +9,7 @@
 #include "fonts/Manti_Sans_Fixed_Demo10pt7b.h"
 #include "fonts/BAR10pt7b.h"
 #include "fonts/BAR20pt7b.h"
+#include "fonts/Lumber_Regular10pt7b.h"
+#include "fonts/Lumber_Regular20pt7b.h"
 
 #endif
