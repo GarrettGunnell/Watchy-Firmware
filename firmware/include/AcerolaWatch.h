@@ -2,27 +2,8 @@
 #define ACEROLA_WATCH_H
 
 #include <Watchy.h>
-#include "watchface_1.h"
-#include "watchface_2.h"
-#include "watchface_3.h"
-#include "watchface_4.h"
-#include "watchface_5.h"
-#include "watchface_6.h"
-#include "watchface_7.h"
-#include "watchface_8.h"
-#include "watchface_9.h"
-#include "watchface_10.h"
-#include "watchface_11.h"
-#include "watchface_12.h"
-#include "watchface_13.h"
-#include "watchface_14.h"
-#include "watchface_15.h"
-#include "fonts/CC_YadaYadaYada18pt7b.h"
-#include "fonts/CC_YadaYadaYada9pt7b.h"
-#include "fonts/CC_YadaYadaYada6pt7b.h"
-#include "fonts/Manti_Sans_Fixed_Demo20pt7b.h"
-#include "fonts/Manti_Sans_Fixed_Demo18pt7b.h"
-#include "fonts/Manti_Sans_Fixed_Demo10pt7b.h"
+#include "faces.h"
+#include "fonts.h"
 
 class AcerolaWatch : public Watchy {
   public:
