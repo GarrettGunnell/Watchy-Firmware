@@ -2,7 +2,7 @@
 #define ACEROLA_WATCH_H
 
 #include <Watchy.h>
-#include "faces.h"
+#include "faces/_faces.h"
 #include "fonts.h"
 
 class AcerolaWatch : public Watchy {
