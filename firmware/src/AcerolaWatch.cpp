@@ -20,8 +20,7 @@ void AcerolaWatch::Face1() {
   display.setFont(&CC_YadaYadaYada9pt7b);
   display.setCursor(105, 60);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -41,8 +40,7 @@ void AcerolaWatch::Face2() {
   display.setFont(&CC_YadaYadaYada9pt7b);
   display.setCursor(5, 190);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -61,8 +59,7 @@ void AcerolaWatch::Face3() {
   display.setFont(&CC_YadaYadaYada9pt7b);
   display.setCursor(0, 65);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -95,8 +92,7 @@ void AcerolaWatch::Face5() {
   display.setFont(&CC_YadaYadaYada9pt7b);
   display.setCursor(1, 60);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -137,8 +133,7 @@ void AcerolaWatch::Face7() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(65, 143);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -159,8 +154,7 @@ void AcerolaWatch::Face8() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(65, 143);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -180,8 +174,7 @@ void AcerolaWatch::Face9() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(10, 50);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -201,8 +194,7 @@ void AcerolaWatch::Face10() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(10, 50);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -222,8 +214,7 @@ void AcerolaWatch::Face11() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(10, 50);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -243,8 +234,7 @@ void AcerolaWatch::Face12() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(10, 50);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -264,8 +254,7 @@ void AcerolaWatch::Face13() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(10, 50);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -298,8 +287,7 @@ void AcerolaWatch::Face15() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(110, 50);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -319,8 +307,7 @@ void AcerolaWatch::Face16() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(110, 50);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -341,8 +328,7 @@ void AcerolaWatch::Face17() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(120, 20);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
@@ -363,8 +349,7 @@ void AcerolaWatch::Face18() {
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(120, 20);
   display.print((currentTime.Month < 10) ? "0" : "");
-  display.print(currentTime.Month);
-  display.print("/");
+  display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
   display.println(currentTime.Day);
 }
