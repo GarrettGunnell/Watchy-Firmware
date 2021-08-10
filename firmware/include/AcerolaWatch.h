@@ -9,6 +9,7 @@
 #include "watchface_5.h"
 #include "watchface_6.h"
 #include "watchface_7.h"
+#include "watchface_8.h"
 #include "fonts/CC_YadaYadaYada18pt7b.h"
 #include "fonts/CC_YadaYadaYada9pt7b.h"
 #include "fonts/CC_YadaYadaYada6pt7b.h"
@@ -26,6 +27,7 @@ class AcerolaWatch : public Watchy {
     void watchFace5();
     void watchFace6();
     void watchFace7();
+    void watchFace8();
 };
 
 #endif
