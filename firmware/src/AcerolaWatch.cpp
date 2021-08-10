@@ -3,7 +3,7 @@
 AcerolaWatch::AcerolaWatch(){}
 
 void AcerolaWatch::drawWatchFace() {
-  Face16();
+  Face17();
 }
 
 void AcerolaWatch::Face1() {
@@ -318,6 +318,28 @@ void AcerolaWatch::Face16() {
 
   display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
   display.setCursor(110, 50);
+  display.print((currentTime.Month < 10) ? "0" : "");
+  display.print(currentTime.Month);
+  display.print("/");
+  display.print((currentTime.Day < 10) ? "0" : "");
+  display.println(currentTime.Day);
+}
+
+void AcerolaWatch::Face17() {
+  display.fillScreen(GxEPD_BLACK);
+  display.drawBitmap(0, 0, watchface17_bg, 200, 200, GxEPD_WHITE);
+  display.setTextColor(GxEPD_BLACK);
+  display.setFont(&Manti_Sans_Fixed_Demo20pt7b);
+  display.setCursor(10, 40);
+  int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 12;
+  display.print((hour < 10) ? "0" : "");
+  display.print(String(hour));
+  display.setCursor(10, 70);
+  display.print((currentTime.Minute < 10) ? "0" : "");
+  display.print(currentTime.Minute);
+
+  display.setFont(&Manti_Sans_Fixed_Demo10pt7b);
+  display.setCursor(120, 20);
   display.print((currentTime.Month < 10) ? "0" : "");
   display.print(currentTime.Month);
   display.print("/");
