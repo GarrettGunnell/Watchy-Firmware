@@ -11,5 +11,6 @@
 #include "fonts/BAR20pt7b.h"
 #include "fonts/Lumber_Regular10pt7b.h"
 #include "fonts/Lumber_Regular20pt7b.h"
-
+#include "fonts/Compacta_Bold_Plain_Regular20pt7b.h"
+#include "fonts/Compacta_Bold_Plain_Regular30pt7b.h"
 #endif
