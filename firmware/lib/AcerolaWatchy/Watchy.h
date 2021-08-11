@@ -2,16 +2,11 @@
 #define WATCHY_H
 
 #include <Arduino.h>
-#include <WiFiManager.h>
-#include <HTTPClient.h>
-#include <Arduino_JSON.h>
 #include <DS3232RTC.h>
 #include <GxEPD2_BW.h>
 #include <Wire.h>
 #include <Fonts/FreeMonoBold9pt7b.h>
-#include "DSEG7_Classic_Bold_53.h"
 #include "BLE.h"
-#include "bma.h"
 #include "config.h"    
 
 typedef struct weatherData{
@@ -37,28 +32,19 @@ class Watchy {
         void showBattery();
         void showBuzz();
         void showAccelerometer();
-        void showUpdateFW();
         void setTime();
-        void setupWifi();
-        bool connectWiFi();
-        weatherData getWeatherData();
-        void updateFWBegin();
 
         void showWatchFace(bool partialRefresh);
         virtual void drawWatchFace(); //override this method for different watch faces
 
     private:
-        void _rtcConfig(String datetime);    
-        void _bmaConfig();
-        static void _configModeCallback(WiFiManager *myWiFiManager);
+        void _rtcConfig(String datetime);
         static uint16_t _readRegister(uint8_t address, uint8_t reg, uint8_t *data, uint16_t len);
         static uint16_t _writeRegister(uint8_t address, uint8_t reg, uint8_t *data, uint16_t len);
 };
 
 extern RTC_DATA_ATTR int guiState;
 extern RTC_DATA_ATTR int menuIndex;
-extern RTC_DATA_ATTR BMA423 sensor;
-extern RTC_DATA_ATTR bool WIFI_CONFIGURED;
 extern RTC_DATA_ATTR bool BLE_CONFIGURED;
 
 #endif
