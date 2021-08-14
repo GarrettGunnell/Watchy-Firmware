@@ -19,6 +19,7 @@
 #include "fonts/Compacta_Bold_Plain_Regular25pt7b.h"
 #include "fonts/Compacta_Bold_Plain_Regular30pt7b.h"
 #include "fonts/Devasia_Bold32pt7b.h"
+#include "fonts/Devasia_Bold28pt7b.h"
 #include "fonts/Devasia_Bold18pt7b.h"
 #include "fonts/amsterdam30pt7b.h"
 
