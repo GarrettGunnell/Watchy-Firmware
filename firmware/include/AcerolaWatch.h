@@ -79,6 +79,7 @@ class AcerolaWatch : public Watchy {
     void Face68();
     void Face69();
     void Face70();
+    void Face71();
 };
 
 #endif
