@@ -71,5 +71,6 @@
 #include "69.h"
 #include "70.h"
 #include "71.h"
+#include "72.h"
 
 #endif
