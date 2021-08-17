@@ -22,5 +22,6 @@
 #include "fonts/Devasia_Bold28pt7b.h"
 #include "fonts/Devasia_Bold18pt7b.h"
 #include "fonts/amsterdam30pt7b.h"
+#include "fonts/VT323_Regular20pt7b.h"
 
 #endif
