@@ -83,7 +83,32 @@ class AcerolaWatch : public Watchy {
     void Face72();
     void Face73();
     void Face74();
-    void Face75();
+    void Face75();    
+    void Face76();
+    void Face77();
+    void Face78();
+    void Face79();
+    void Face80();
+    void Face81();
+    void Face82();
+    void Face83();
+    void Face84();
+    void Face85();
+    void Face86();
+    void Face87();
+    void Face88();
+    void Face89();
+    void Face90();
+    void Face91();
+    void Face92();
+    void Face93();
+    void Face94();
+    void Face95();
+    void Face96();
+    void Face97();
+    void Face98();
+    void Face99();
+    void Face100();
 };
 
 #endif
