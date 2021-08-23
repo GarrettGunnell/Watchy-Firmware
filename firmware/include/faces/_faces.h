@@ -1,6 +1,7 @@
 #ifndef FACES_H
 #define FACES_H
 
+#include "_middle_line.h"
 #include "1.h"
 #include "2.h"
 #include "3.h"
@@ -78,5 +79,6 @@
 #include "76.h"
 #include "77.h"
 #include "78.h"
+#include "79.h"
 
 #endif
