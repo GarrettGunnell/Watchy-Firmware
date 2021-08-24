@@ -29,5 +29,6 @@
 #include "fonts/cmuntx18pt7b.h"
 #include "fonts/cmuntx14pt7b.h"
 #include "fonts/cmuntx10pt7b.h"
+#include "fonts/VT323_Regular16pt7b.h"
 
 #endif
