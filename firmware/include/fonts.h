@@ -31,5 +31,7 @@
 #include "fonts/cmuntx10pt7b.h"
 #include "fonts/VT323_Regular16pt7b.h"
 #include "fonts/VT323_Regular14pt7b.h"
+#include "fonts/LinLibertine_M20pt7b.h"
+#include "fonts/LinLibertine_M12pt7b.h"
 
 #endif
