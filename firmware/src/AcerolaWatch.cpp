@@ -3,7 +3,7 @@
 AcerolaWatch::AcerolaWatch(){}
 
 void AcerolaWatch::drawWatchFace() {
-  Face111();
+  Face112();
 }
 
 void AcerolaWatch::Face1() {
@@ -2192,6 +2192,20 @@ void AcerolaWatch::Face111() {
   display.print((hour < 10) ? "0" : "");
   display.print(String(hour));
   display.setCursor(176, 195);
+  display.print((currentTime.Minute < 10) ? "0" : "");
+  display.print(currentTime.Minute);
+}
+
+void AcerolaWatch::Face112() {
+  display.fillScreen(GxEPD_BLACK);
+  display.drawBitmap(0, 0, WatchFaceBg112, 200, 200, GxEPD_WHITE);
+  display.setTextColor(GxEPD_WHITE);
+  display.setFont(&VT323_Regular14pt7b);
+  display.setCursor(62, 30);
+  int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 12;
+  display.print((hour < 10) ? "0" : "");
+  display.print(String(hour));
+  display.setCursor(67, 50);
   display.print((currentTime.Minute < 10) ? "0" : "");
   display.print(currentTime.Minute);
 }
