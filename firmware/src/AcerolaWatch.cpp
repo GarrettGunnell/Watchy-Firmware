@@ -2037,17 +2037,16 @@ void AcerolaWatch::Face102() {
 void AcerolaWatch::Face103() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, WatchFaceBg103, 200, 200, GxEPD_WHITE);
-  display.setTextColor(GxEPD_WHITE);
+  display.setTextColor(GxEPD_BLACK);
   display.setFont(&VT323_Regular20pt7b);
-  display.setCursor(3, 33);
+  display.setCursor(60, 173);
   int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 12;
   display.print((hour < 10) ? "0" : "");
-  display.print(String(hour));
-  display.setCursor(30, 63);
+  display.print(String(hour) + ":");
   display.print((currentTime.Minute < 10) ? "0" : "");
   display.print(currentTime.Minute);
-  display.setFont(&VT323_Regular16pt7b);
-  display.setCursor(130, 193);
+  display.setFont(&VT323_Regular12pt7b);
+  display.setCursor(77, 193);
   display.print((currentTime.Month < 10) ? "0" : "");
   display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
