@@ -3,7 +3,7 @@
 AcerolaWatch::AcerolaWatch(){}
 
 void AcerolaWatch::drawWatchFace() {
-  Face43();
+  Face98();
 }
 
 void AcerolaWatch::Face1() {
@@ -68,12 +68,12 @@ void AcerolaWatch::Face4() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, watchface4_bg, 200, 200, GxEPD_WHITE);
   display.setTextColor(GxEPD_WHITE);
-  display.setFont(&CC_YadaYadaYada9pt7b);
+  display.setFont(&VT323_Regular20pt7b);
   display.setCursor(80, 80);
   int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 12;
   display.print((hour < 10) ? "0" : "");
   display.print(hour);
-  display.setCursor(80, 100);
+  display.setCursor(80, 105);
   display.print((currentTime.Minute < 10) ? "0" : "");
   display.print(currentTime.Minute);
 }
@@ -109,8 +109,8 @@ void AcerolaWatch::Face6() {
   display.print("JUST FINE AGAIN TODAY.");
 
   display.setTextColor(GxEPD_BLACK);
-  display.setFont(&CC_YadaYadaYada18pt7b);
-  display.setCursor(35, 112);
+  display.setFont(&VT323_Regular20pt7b);
+  display.setCursor(61, 112);
   int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 12;
   display.print((hour < 10) ? "0" : "");
   display.print(String(hour) + ":");
