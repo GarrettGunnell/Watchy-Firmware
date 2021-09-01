@@ -2395,13 +2395,20 @@ void AcerolaWatch::Face122() {
 void AcerolaWatch::Face123() {
   display.fillScreen(GxEPD_BLACK);
   display.drawBitmap(0, 0, WatchFaceBg123, 200, 200, GxEPD_WHITE);
-  display.setTextColor(GxEPD_WHITE);
+  display.setTextColor(GxEPD_BLACK);
   display.setFont(&earwig_factory_rg20pt7b);
-  display.setCursor(30, 145);
+  display.setCursor(131, 40);
   int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 12;
   display.print((hour < 10) ? "0" : "");
   display.print(String(hour));
-  display.setCursor(45, 170);
+  display.setCursor(146, 65);
+  display.print((currentTime.Minute < 10) ? "0" : "");
+  display.print(currentTime.Minute);
+  display.setTextColor(GxEPD_WHITE);
+  display.setCursor(128, 38);
+  display.print((hour < 10) ? "0" : "");
+  display.print(String(hour));
+  display.setCursor(143, 63);
   display.print((currentTime.Minute < 10) ? "0" : "");
   display.print(currentTime.Minute);
 }
