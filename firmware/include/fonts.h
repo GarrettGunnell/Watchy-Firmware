@@ -25,6 +25,8 @@
 #include "fonts/VT323_Regular20pt7b.h"
 #include "fonts/VT323_Regular18pt7b.h"
 #include "fonts/VT323_Regular12pt7b.h"
+#include "fonts/VT323_Regular30pt7b.h"
+#include "fonts/VT323_Regular25pt7b.h"
 #include "fonts/cmuntx24pt7b.h"
 #include "fonts/cmuntx18pt7b.h"
 #include "fonts/cmuntx14pt7b.h"
@@ -33,5 +35,6 @@
 #include "fonts/VT323_Regular14pt7b.h"
 #include "fonts/LinLibertine_M20pt7b.h"
 #include "fonts/LinLibertine_M12pt7b.h"
+#include "fonts/Lekton_Bold20pt7b.h"
 
 #endif
