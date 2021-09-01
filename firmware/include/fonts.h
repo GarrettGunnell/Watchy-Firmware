@@ -36,5 +36,6 @@
 #include "fonts/LinLibertine_M20pt7b.h"
 #include "fonts/LinLibertine_M12pt7b.h"
 #include "fonts/Lekton_Bold20pt7b.h"
+#include "fonts/earwig_factory_rg20pt7b.h"
 
 #endif
