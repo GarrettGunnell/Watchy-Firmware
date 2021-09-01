@@ -3,7 +3,7 @@
 AcerolaWatch::AcerolaWatch(){}
 
 void AcerolaWatch::drawWatchFace() {
-  Face126();
+  Face128();
 }
 
 void AcerolaWatch::Face1() {
@@ -2465,6 +2465,44 @@ void AcerolaWatch::Face126() {
   display.print(currentTime.Minute);
   display.setFont(&LinLibertine_M12pt7b);
   display.setCursor(62, 16);
+  display.print((currentTime.Month < 10) ? "0" : "");
+  display.print(String(currentTime.Month) + "/");
+  display.print((currentTime.Day < 10) ? "0" : "");
+  display.println(currentTime.Day);
+}
+
+void AcerolaWatch::Face127() {
+  display.fillScreen(GxEPD_BLACK);
+  display.drawBitmap(0, 0, WatchFaceBg127, 200, 200, GxEPD_WHITE);
+  display.setTextColor(GxEPD_WHITE);
+  display.setFont(&Compacta_Bold_Plain_Regular20pt7b);
+  display.setCursor(20, 42);
+  int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 12;
+  display.print((hour < 10) ? "0" : "");
+  display.print(String(hour) + ":");
+  display.print((currentTime.Minute < 10) ? "0" : "");
+  display.print(currentTime.Minute);
+  display.setFont(&Compacta_Bold_Plain_Regular20pt7b);
+  display.setCursor(120, 42);
+  display.print((currentTime.Month < 10) ? "0" : "");
+  display.print(String(currentTime.Month) + "/");
+  display.print((currentTime.Day < 10) ? "0" : "");
+  display.println(currentTime.Day);
+}
+
+void AcerolaWatch::Face128() {
+  display.fillScreen(GxEPD_BLACK);
+  display.drawBitmap(0, 0, WatchFaceBg128, 200, 200, GxEPD_WHITE);
+  display.setTextColor(GxEPD_WHITE);
+  display.setFont(&Compacta_Bold_Plain_Regular20pt7b);
+  display.setCursor(20, 42);
+  int8_t hour = (currentTime.Hour % 12 != 0) ? currentTime.Hour % 12 : 12;
+  display.print((hour < 10) ? "0" : "");
+  display.print(String(hour) + ":");
+  display.print((currentTime.Minute < 10) ? "0" : "");
+  display.print(currentTime.Minute);
+  display.setFont(&Compacta_Bold_Plain_Regular20pt7b);
+  display.setCursor(120, 42);
   display.print((currentTime.Month < 10) ? "0" : "");
   display.print(String(currentTime.Month) + "/");
   display.print((currentTime.Day < 10) ? "0" : "");
