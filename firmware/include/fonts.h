@@ -34,6 +34,7 @@
 #include "fonts/VT323_Regular16pt7b.h"
 #include "fonts/VT323_Regular14pt7b.h"
 #include "fonts/LinLibertine_M20pt7b.h"
+#include "fonts/LinLibertine_M16pt7b.h"
 #include "fonts/LinLibertine_M12pt7b.h"
 #include "fonts/Lekton_Bold20pt7b.h"
 #include "fonts/earwig_factory_rg20pt7b.h"
