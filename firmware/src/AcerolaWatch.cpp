@@ -3,7 +3,7 @@
 AcerolaWatch::AcerolaWatch(){}
 
 void AcerolaWatch::drawWatchFace() {
-  Face130();
+  Face123();
 }
 
 void AcerolaWatch::Face1() {
